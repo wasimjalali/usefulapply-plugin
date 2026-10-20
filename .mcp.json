@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "usefulapply": {
+      "type": "http",
+      "url": "https://usefulapply.com/mcp"
+    }
+  }
+}

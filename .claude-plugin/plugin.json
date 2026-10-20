@@ -1,0 +1,17 @@
+{
+  "name": "usefulapply",
+  "displayName": "Useful Apply",
+  "description": "Apply to jobs from Claude Code with Useful Apply: check fit, generate a tailored CV, cover letter and emails, export them and track the application.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Useful Apply",
+    "url": "https://usefulapply.com"
+  },
+  "homepage": "https://usefulapply.com/integrations",
+  "repository": "https://github.com/wasimjalali/usefulapply-plugin",
+  "license": "MIT",
+  "keywords": ["jobs", "job-search", "cv", "resume", "cover-letter", "applications", "mcp"],
+  "supportUrl": "https://usefulapply.com/contact",
+  "privacyPolicyUrl": "https://usefulapply.com/privacy",
+  "termsOfServiceUrl": "https://usefulapply.com/terms"
+}

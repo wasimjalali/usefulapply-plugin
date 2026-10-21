@@ -1,0 +1,15 @@
+{
+  "name": "usefulapply",
+  "description": "Useful Apply plugins for Claude Code",
+  "owner": {
+    "name": "Useful Apply",
+    "url": "https://usefulapply.com"
+  },
+  "plugins": [
+    {
+      "name": "usefulapply",
+      "source": "./",
+      "description": "Prepare job applications with Useful Apply: fit check, tailored CV, cover letter, emails, export and tracking."
+    }
+  ]
+}

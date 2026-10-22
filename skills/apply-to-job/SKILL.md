@@ -27,6 +27,7 @@ Nothing is ever submitted to an employer. You draft and export documents, and th
 ## Workflow
 
 1. **Check the account.** Call `get_account` for balance, daily agent limit and whether a CV is on file. Call `get_cv` to confirm the CV looks right. If there's no CV, ask the user for the text or a file, then call `save_cv` with `target` set to `primary` (or `master`) and either `text` or `file`.
+   Then read `profile.availability` from the `get_account` result. If it's null and `profile.availabilityAsked` is false, ask once: when can they start (`immediately`, `2_weeks`, `1_month`, `3_months` or `other` with details in their words), and what's their salary expectation (optional)? Save the answers with `update_profile` (`availability`, `availabilityNote`, `salaryExpectation`). If they skip, still call `update_profile` with `availability: null`, so they aren't asked again. Never guess a start date or a salary.
 2. **Create the application.** Call `create_application` with `jobDescription`, `title`, `company` and `url`. Get missing details from the user, don't guess them.
 3. **Run the fit check.** State the cost and get a yes. Call `analyze_job_fit` with the `applicationId` and a new `idempotencyKey`.
 4. **Show the fit and confirm.** Summarise the score, strengths and gaps. State the kit cost (it's lower after a paid fit check) and ask whether to generate. Stop here if they say no.
